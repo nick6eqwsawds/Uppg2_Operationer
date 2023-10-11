@@ -30,6 +30,21 @@ public class uppg2_operationer {
         int svar4 = (int)svar3;
 
         System.out.println(svar2+" + "+svar4+"/"+nämnare);
+
+        tangentbord.nextLine();
+
+        System.out.println("Ange antalet timmar: ");
+        double timmar = tangentbord.nextDouble();
+        System.out.println("Ange antalet minuter: ");
+        double minuter = tangentbord.nextDouble();
+        System.out.println("Ange antalet sekunder: ");
+        double sekunder = tangentbord.nextDouble();
+
+        System.out.println("Tidsomvandling ger: ");
+        double antal_timmar = timmar+minuter/60+(sekunder/60)/60;
+        double antal_minuter = antal_timmar*60;
+        double antal_sekunder = antal_minuter*60;
+        System.out.println(antal_timmar+" h = "+antal_minuter+" min = "+antal_sekunder+" s");
     }
 }
 }
