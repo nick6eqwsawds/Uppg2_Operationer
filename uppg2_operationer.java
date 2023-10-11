@@ -19,8 +19,17 @@ public class uppg2_operationer {
         System.out.println("Ditt tal avrundat till närmast tusental är: "+avrundat_tal);
 
         tangentbord.nextLine();
+
+        System.out.println("Mata in täljare och nämnare: ");
+        double täljare = tangentbord.nextDouble();
+        double nämnare = tangentbord.nextDouble();
+
+        double svar = täljare/nämnare;
+        int svar2 = (int)svar;
+        double svar3 = (svar-svar2)*nämnare;
+        int svar4 = (int)svar3;
+
+        System.out.println(svar2+" + "+svar4+"/"+nämnare);
     }
 }
-
-    
 }
